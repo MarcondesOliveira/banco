@@ -27,4 +27,11 @@ func main() {
 	fmt.Println(contaDoTroll)
 	fmt.Println(contaDoZezinho)
 
+	var contaDoColosso *ContaCorrente
+	contaDoColosso = new(ContaCorrente)
+	contaDoColosso.titular = "Colosso"
+	contaDoColosso.saldo = 500
+
+	fmt.Println(*contaDoColosso)
+
 }
